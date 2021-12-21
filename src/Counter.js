@@ -19,7 +19,7 @@ function Counter() {
   const [count1, dispatch1] = useReducer(countReducer, 0);
 
   const increment = () => dispatch({ type: "INCREMENT", by: 1 });
-  const decrement = () => dispatch({ type: "DECREMENT", by: 2 });
+  const decrement = () => dispatch({ type: "DECREMENT", by: 1 });
   const reset = () => dispatch({ type: "RESET" });
 
   return (
